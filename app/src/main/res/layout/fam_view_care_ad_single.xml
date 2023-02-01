@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="#ECEFF6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/FamCareAdPhoto"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp" />
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@id/FamCareAdPhoto"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/FamCareAdName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mandali"
+                    android:text="TextView"
+                    android:textColor="#262626"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RatingBar
+                        android:id="@+id/FamCareAdRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:rating="3"
+                        android:numStars="5"
+                        android:isIndicator="true"
+                        style="?android:ratingBarStyleSmall"
+                        android:progressTint="@color/quantum_cyan"
+                        app:layout_constraintTop_toBottomOf="@+id/FamCareAdName"/>
+
+                    <TextView
+                        android:id="@+id/FamCareAdRatingQuantity"
+                        android:layout_marginStart="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(0)"
+                        android:textColor="#83BFB9" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/FamCareAdSalary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mandali"
+                    android:text="TextView"
+                    android:textColor="#83BFB9"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/FamCareAdRating" />
+
+                <TextView
+                    android:id="@+id/FamCareAdDistance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mandali"
+                    android:text="TextView"
+                    android:textColor="#83BFB9"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/FamCareAdSalary" />
+
+                <TextView
+                    android:id="@+id/FamCareAdExpertise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mandali"
+                    android:text="TextView"
+                    android:textColor="#83BFB9"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/FamCareAdDistance" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/BTFamCareAdChat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CHAT"
+                    android:textColor="#262626"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

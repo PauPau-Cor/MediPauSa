@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="false"
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    tools:context=".FamMenus.FamEditLinkedCare">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/comfortaa"
+            android:text="Información del cuidador"
+            android:layout_marginTop="20dp"
+            android:textColor="#6890B8"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            />
+
+        <ImageView
+            android:id="@+id/FamViewSingleCarePhoto"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/FamViewSingleCarename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Nombre"
+            android:textSize="14sp"
+            android:textColor="#595959"
+            android:fontFamily="@font/mandali"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#595959"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/FamEditSingleCareShiftsWorked"
+            style="@style/outlinedTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingHorizontal="15dp"
+            android:hint="Turnos trabajados"
+            android:textColorHint="#262626">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mandali"
+                android:textColor="#262626"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/FamEditSingleCareSalary"
+            style="@style/outlinedTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingHorizontal="15dp"
+            android:hint="Salario por hora"
+            android:textColorHint="#262626">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mandali"
+                android:textColor="#262626"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/FamEditSingleCareAccSalary"
+            style="@style/outlinedTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingHorizontal="15dp"
+            android:hint="Salario acumulado"
+            android:textColorHint="#262626">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mandali"
+                android:inputType="numberDecimal"
+                android:textColor="#262626"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Turnos"
+            android:textSize="14sp"
+            android:textColor="#595959"
+            android:fontFamily="@font/mandali"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#595959"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/FamEditSingleCareAddShiftRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Añadir turno"
+            android:backgroundTint="#779BBF"
+            android:textColor="#262626"
+            android:layout_marginVertical="12dp"
+            android:layout_marginEnd="20dp"/>
+        <LinearLayout
+            android:id="@+id/LayoutEditLinkedCareShifts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:orientation="vertical"></LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/FamEditSingleCareBT"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:text="Guardar cambios"
+            android:backgroundTint="#779BBF"
+            android:textColor="#262626"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="30dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

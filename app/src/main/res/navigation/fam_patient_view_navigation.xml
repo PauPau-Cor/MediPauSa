@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fam_patient_view_navigation"
+    app:startDestination="@id/fam_patview_meds">
+
+    <fragment
+        android:id="@+id/fam_patview_meds"
+        android:name="com.example.proyectoceti.FamMenus.FamPatientViewMeds"
+        android:label="Medicamentos"
+        tools:layout="@layout/fragment_fam_patient_view_meds" />
+
+    <fragment
+        android:id="@+id/fam_patview_needs"
+        android:name="com.example.proyectoceti.FamMenus.FamPatientViewNeeds"
+        android:label="Necesidades"
+        tools:layout="@layout/fragment_fam_patient_view_needs" />
+
+    <fragment
+        android:id="@+id/fam_patview_calendar"
+        android:name="com.example.proyectoceti.FamMenus.FamPatientViewGeneralSummary"
+        android:label="Resumen general"
+        tools:layout="@layout/fragment_fam_patient_view_general_summary" />
+
+    <fragment
+        android:id="@+id/fam_patview_info"
+        android:name="com.example.proyectoceti.FamMenus.FamPatientViewInfo"
+        android:label="Info"
+        tools:layout="@layout/fragment_fam_patient_view_info" />
+
+    <fragment
+        android:id="@+id/fam_patview_emergency"
+        android:name="com.example.proyectoceti.FamMenus.FamPatientViewEmergency"
+        android:label="Emergencia"
+        tools:layout="@layout/fragment_fam_patient_view_emergency" />
+
+</navigation>

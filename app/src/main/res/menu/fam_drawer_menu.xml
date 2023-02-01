@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Tu perfil" android:id="@+id/FamBTProfile"/>
+    <item android:title="Cambiar contraseña" android:id="@+id/FamResetPass"/>
+    <item android:title="Ver promocionales" android:id="@+id/FamViewAdsMenuBT"/>
+    <item android:title="Vincular encargados" android:id="@+id/FamLinkFamBT"/>
+    <item android:title="Configurar boton" android:id="@+id/ConfigButtonBT"/>
+    <item android:title="Cerrar sesion" android:id="@+id/FamLogOutBT"/>
+</menu>

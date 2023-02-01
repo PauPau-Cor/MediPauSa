@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="#ECEFF6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp">
+            <TextView
+                android:id="@+id/ContactName"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:fontFamily="@font/mandali"
+                android:textSize="20sp"
+                android:paddingVertical="10dp"
+                android:paddingStart="5dp"
+                android:textStyle="bold"
+                android:textColor="#262626"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <View
+                android:id="@+id/lilBarLol"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:background="#777777"
+                android:layout_marginHorizontal="3dp"
+                app:layout_constraintStart_toEndOf="@+id/ContactName"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <ImageButton
+                android:id="@+id/ContactEditButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_edit_24"
+                android:background="@drawable/chat_background_input"
+                android:backgroundTint="#3298AC"
+                app:tint="@color/white"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/lilBarLol"/>
+
+            <ImageButton
+                android:id="@+id/ContactCallButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_call"
+                android:background="@drawable/chat_background_input"
+                android:backgroundTint="#3298AC"
+                app:tint="@color/white"
+                android:layout_marginStart="5dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ContactEditButton"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

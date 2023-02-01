@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProyectoCeti"
+        tools:targetApi="31">
+        <activity
+            android:name=".OperatorMenus.OperatorViewUnbanRequest"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiOpe"/>
+        <activity
+            android:name=".OperatorMenus.OperatorPendingUnbans"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiOpe" />
+        <activity
+            android:name=".GeneralMenus.ViewButtonPresses"
+            android:exported="false" />
+        <activity
+            android:name=".FamMenus.EditFam"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiFam" />
+        <activity
+            android:name=".FamMenus.FamAddEditInsurance"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiFam" />
+        <activity
+            android:name=".GeneralMenus.ViewProfile"
+            android:exported="false" />
+        <activity
+            android:name=".FamMenus.FamConfigButton"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiFam" />
+        <activity
+            android:name=".FamMenus.FamSelectButton"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiFam" />
+        <activity
+            android:name=".OperatorMenus.OperatorViewButton"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiOpe" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notifications" />
+
+        <activity
+            android:name=".OperatorMenus.OperatorViewReport"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiOpe" />
+        <activity
+            android:name=".GeneralMenus.ViewNeed"
+            android:exported="false" />
+        <activity
+            android:name=".FamMenus.FamAddEditHospital"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiFam" />
+        <activity
+            android:name=".FamMenus.FamAddEditPatientContact"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiFam" />
+        <activity
+            android:name=".GeneralMenus.ViewMed"
+            android:exported="false" />
+        <activity
+            android:name=".GeneralMenus.ViewNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".GeneralMenus.AddNeeds"
+            android:exported="false" />
+        <activity
+            android:name=".CareMenus.CareViewSingleLinkedFam"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiCareTaker" />
+        <activity
+            android:name=".OperatorMenus.OperatorViewUserForDoc"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiOpe" />
+        <activity
+            android:name=".OperatorMenus.OperatorMenu"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiOpe" />
+        <activity
+            android:name=".CareMenus.CareLinkFamIn"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiCareTaker" />
+        <activity
+            android:name=".CareMenus.CareSwitchAd"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiCareTaker" />
+        <activity
+            android:name=".GeneralMenus.ViewEvent"
+            android:exported="false" />
+        <activity
+            android:name=".GeneralMenus.AddEvents"
+            android:exported="false" />
+        <activity
+            android:name=".FamMenus.FamEditLinkedCare"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiFam" />
+        <activity
+            android:name=".FamMenus.FamViewSingleLinkedCare"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiFam" />
+        <activity
+            android:name=".GeneralMenus.ChatRecentConvos"
+            android:exported="false" />
+        <activity
+            android:name=".GeneralMenus.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FamMenus.FamViewCareAds"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiFam" />
+        <activity
+            android:name=".FamMenus.EditPat"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiFam" />
+        <activity
+            android:name=".GeneralMenus.AddMeds"
+            android:exported="false" />
+        <activity
+            android:name=".CareMenus.CarePatientView"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiCareTaker" />
+        <activity
+            android:name=".FamMenus.FamPatientView"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiFam" />
+        <activity
+            android:name=".GeneralMenus.PassReset"
+            android:exported="false" />
+        <activity
+            android:name=".CareMenus.EditCare"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiCareTaker" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".FamMenus.FamCareLink"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiFam" />
+        <activity
+            android:name=".FamMenus.FamPacReg"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiFam" />
+        <activity
+            android:name=".FamMenus.FamMenu"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiFam" />
+        <activity
+            android:name=".CareMenus.CareMenu"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiCareTaker" />
+        <activity
+            android:name=".GeneralMenus.ForgotPass"
+            android:exported="false" />
+        <activity
+            android:name=".FamMenus.RegFam"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiFam" />
+        <activity
+            android:name=".CareMenus.RegCare"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoCetiCareTaker" />
+        <activity
+            android:name=".GeneralMenus.RegTypeMenu"
+            android:exported="false" />
+        <activity
+            android:name=".GeneralMenus.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GeneralMenus.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Misc.PushNotificationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+    </application>
+
+</manifest>

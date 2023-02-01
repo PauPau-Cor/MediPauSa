@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/OperatorDrawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OperatorMenus.OperatorMenu">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/Operator_Toolbar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:backgroundTint="#EB5E55"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/OperatorAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:navigationIcon="@drawable/ic_round_menu" >
+
+                <ImageButton
+                    android:id="@+id/SeeNotifsBT"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="?android:selectableItemBackground"
+                    android:layout_gravity="end"
+                    android:layout_margin="7dp"
+                    android:src="@drawable/ic_outline_notifications_24"
+                    android:contentDescription="Notifications" />
+
+                <ImageButton
+                    android:id="@+id/SeeButtonPressesBT"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="?android:selectableItemBackground"
+                    android:layout_gravity="end"
+                    android:layout_margin="2dp"
+                    android:src="@drawable/ic_outline_contact_emergency_24"
+                    android:contentDescription="Notifications" />
+            </com.google.android.material.appbar.MaterialToolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/operator_bottom_nav_menu" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/operator_host_layout"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="50dp"
+            android:paddingTop="50dp"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toTopOf="@id/nav_view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Operator_Toolbar"
+            app:navGraph="@navigation/operator_navigation_bottom"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/OperatorDrawerNavView"
+        android:layout_gravity="start"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/operator_drawer_menu"
+        app:headerLayout="@layout/operator_drawer_header">
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

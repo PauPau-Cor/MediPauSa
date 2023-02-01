@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/operator_nav_documents"
+        android:icon="@drawable/ic_round_pending_actions"
+        android:title="Documentos" />
+    <item
+        android:id="@+id/operator_nav_ads"
+        android:icon="@drawable/ic_outline_ads"
+        android:title="Promocionales" />
+
+    <item
+        android:id="@+id/operator_nav_reports"
+        android:icon="@drawable/ic_outline_report"
+        android:title="Reportes" />
+
+    <item
+        android:id="@+id/operator_nav_recent_chats"
+        android:icon="@drawable/ic_outline_chat"
+        android:title="Chat" />
+
+</menu>

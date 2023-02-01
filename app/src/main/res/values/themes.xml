@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ProyectoCeti" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#C2ADCF</item>
+        <item name="colorPrimaryVariant">#8047B9</item>
+        <item name="colorOnPrimary">#9B6DC7</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#277989</item>
+        <item name="colorSecondaryVariant">#3298AC</item>
+        <item name="colorOnSecondary">#4BB5CB</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" >#CACACA</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowContentTransitions"> true </item>
+    </style>
+    <style name="Theme.ProyectoCetiCareTaker" parent="Theme.ProyectoCeti">
+        <item name="android:statusBarColor" >#B996B6</item>
+    </style>
+    <style name="Theme.ProyectoCetiFam" parent="Theme.ProyectoCeti">
+        <item name="android:statusBarColor" >#92AFCC</item>
+    </style>
+    <style name="Theme.ProyectoCetiOpe" parent="Theme.ProyectoCeti">
+        <item name="android:statusBarColor" >#472836</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+    <style name="Theme.ProyectoCeti.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.ProyectoCeti.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.ProyectoCeti.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

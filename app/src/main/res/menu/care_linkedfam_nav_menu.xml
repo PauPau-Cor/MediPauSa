@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/care_linkedfam_pats"
+        android:icon="@drawable/ic_outline_pacientes"
+        android:title="Pacientes" />
+
+    <item
+        android:id="@+id/care_linkedfam_me"
+        android:icon="@drawable/ic_outline_person"
+        android:title="Mi perfil" />
+
+    <item
+        android:id="@+id/care_linkedfam_cares"
+        android:icon="@drawable/ic_outline_people_alt_24"
+        android:title="Cuidadores" />
+</menu>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/care_patview_meds"
+        android:icon="@drawable/ic_medication"
+        android:title="Medicamentos" />
+
+    <item
+        android:id="@+id/care_patview_needs"
+        android:icon="@drawable/ic_outline_fastfood"
+        android:title="Necesidades" />
+
+    <item
+        android:id="@+id/care_patview_calendar"
+        android:icon="@drawable/ic_baseline_calendar"
+        android:title="Resumen general" />
+
+    <item
+        android:id="@+id/care_patview_info"
+        android:icon="@drawable/ic_info"
+        android:title="Informacion" />
+
+    <item
+        android:id="@+id/care_patview_emergency"
+        android:icon="@drawable/ic_baseline_emergency"
+        android:title="Emergencia" />
+</menu>

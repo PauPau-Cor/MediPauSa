@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/care_nav_patlist"
+        android:icon="@drawable/ic_outline_pacientes"
+        android:title="Pacientes" />
+
+    <item
+        android:id="@+id/care_nav_linked_fam"
+        android:icon="@drawable/ic_outline_linked_users"
+        android:title="Encargados vinculados" />
+
+    <item
+        android:id="@+id/care_nav_recent_chats"
+        android:icon="@drawable/ic_outline_chat"
+        android:title="Chat" />
+
+</menu>

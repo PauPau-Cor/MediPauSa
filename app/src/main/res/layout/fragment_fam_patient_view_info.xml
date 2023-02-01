@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="false"
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    tools:context=".FamMenus.FamPatientViewInfo">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Personal"
+            android:textSize="14sp"
+            android:textColor="#595959"
+            android:fontFamily="@font/mandali"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#595959"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/mandali"
+                android:text="Tipo de Cuidado: "
+                android:textColor="#92AFCC"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/FamPatientViewCareType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/mandali"
+                android:hint="Tipo de cuidado"
+                android:textColor="#262626"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/mandali"
+                android:text="Sexo: "
+                android:textSize="20sp"
+                android:textColor="#92AFCC"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/FamPatientViewSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/mandali"
+                android:hint="Sexo"
+                android:textColor="#262626"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/mandali"
+                android:text="Tipo de Sangre: "
+                android:textSize="20sp"
+                android:textColor="#92AFCC"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/FamPatientViewBlood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/mandali"
+                android:hint="Tipo de Sangre"
+                android:textColor="#262626"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/mandali"
+                android:textColor="#92AFCC"
+                android:text="Fecha de Nacimiento: "
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/FamPatientViewBirth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/mandali"
+                android:textColor="#262626"
+                android:hint="Cumpleaños"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="16dp"
+                android:text="Domicilio: "
+                android:textSize="20sp"
+                android:textColor="#92AFCC"
+                android:fontFamily="@font/mandali"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/FamPatientViewAddre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="16dp"
+                android:hint="Domicilio"
+                android:textSize="20sp"
+                android:textColor="#262626"
+                android:fontFamily="@font/mandali"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="16dp"
+                android:text="Enfermedades: "
+                android:textSize="20sp"
+                android:textColor="#92AFCC"
+                android:fontFamily="@font/mandali"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/FamPatientViewIll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="16dp"
+                android:hint="Enfermedades"
+                android:textSize="20sp"
+                android:textColor="#262626"
+                android:fontFamily="@font/mandali"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="16dp"
+                android:text="Alergias: "
+                android:textSize="20sp"
+                android:textColor="#92AFCC"
+                android:fontFamily="@font/mandali"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/FamPatientViewAller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="16dp"
+                android:hint="Alergias"
+                android:textSize="20sp"
+                android:textColor="#262626"
+                android:fontFamily="@font/mandali"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Tu perfil" android:id="@+id/CareBTProfile"/>
+    <item android:title="Cambiar contraseña" android:id="@+id/CareResetPass"/>
+    <item android:title="Vincular encargados" android:id="@+id/CareLinkFamBT"/>
+    <item android:title="Activar promocional" android:id="@+id/CareToggleAdBT"/>
+    <item android:title="Cerrar sesion" android:id="@+id/CareLogOutBT"/>
+</menu>

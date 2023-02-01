@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    tools:context=".FamMenus.FamCareLink">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="Vincular cuidador"
+        android:textAlignment="center"
+        android:textColor="#262626"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/TVLinkCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginTop="30dp"
+        android:textSize="40sp"
+        android:hint="_ _ _ _ _ _ _ _"
+        />
+    <Button
+        android:id="@+id/BtLinkCodeGen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Generar codigo"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:hint="El cuidador tendrá un día para insertar el codigo en su aplicación antes de que expire. \n\n Al introducir el codigo el cuidador tendrá acceso a todos tus pacientes."
+        />
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#C2ADCF"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/Care_main_pfp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        app:riv_oval="true"
+        android:src="@drawable/profilephotocare"/>
+
+    <TextView
+        android:id="@+id/Care_main_name"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Nombre"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F2F2F2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CareMenus.CareSwitchAd">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/CareAdHeader"
+        android:background="#9B6DC7"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/title"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Promocional"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginEnd="80dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activado:"
+            android:fontFamily="@font/comfortaa"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/EditAd"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_edit_24"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:backgroundTint="#8047B9"/>
+
+        <ImageButton
+            android:id="@+id/AdViewRatings"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_outline_star_rate"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintStart_toEndOf="@id/EditAd"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#8047B9"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/SwitchAdActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/TV"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="15dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5"/>
+
+        <TextView
+            android:id="@+id/StatusTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/AdViewRatings"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            android:text="Estado de aprobacion: "
+            android:fontFamily="@font/comfortaa"/>
+
+        <FrameLayout
+            android:id="@+id/StatusGreen"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#337CB342"
+            app:layout_constraintTop_toBottomOf="@+id/StatusTV"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="7dp" />
+
+        <FrameLayout
+            android:id="@+id/StatusYellow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#29FDD835"
+            app:layout_constraintTop_toBottomOf="@+id/StatusTV"
+            app:layout_constraintStart_toEndOf="@id/StatusGreen"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="7dp" />
+
+        <FrameLayout
+            android:id="@+id/StatusRed"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#26E53935"
+            app:layout_constraintTop_toBottomOf="@+id/StatusTV"
+            app:layout_constraintStart_toEndOf="@id/StatusYellow"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="7dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/Explanation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Crear un promocional te ayudará a conseguir clientes como cuidador."
+        android:textSize="25sp"
+        android:fontFamily="@font/mandali"
+        app:layout_constraintTop_toBottomOf="@id/CareAdHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/RejectReason"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintTop_toBottomOf="@id/Explanation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="25sp"
+        android:fontFamily="@font/mandali"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

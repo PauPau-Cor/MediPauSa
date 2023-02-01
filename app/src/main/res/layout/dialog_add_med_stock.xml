@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Añadir cantidad"
+                android:textStyle="bold"
+                android:textSize="24sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="Cantidad"
+                android:textColorHint="#262626"
+                android:id="@+id/AddMedDialogQuantity"
+                style="@style/outlinedTextInputLayout">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#262626"
+                    android:inputType="number"
+                    android:fontFamily="@font/mandali">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/mandali"
+                android:text="Fecha de Expiración"
+                android:textColor="#83BFB9"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ETAddMedsExpir"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:clickable="true"
+                android:focusable="false"
+                android:fontFamily="@font/mandali"
+                android:inputType="date"
+                android:textColor="#262626"
+                android:drawableLeft="@drawable/ic_baseline_calendar_today_24_2"
+                android:drawablePadding="20dp"
+                android:textSize="18sp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/AddMedDialogAdd"
+                android:text="añadir"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

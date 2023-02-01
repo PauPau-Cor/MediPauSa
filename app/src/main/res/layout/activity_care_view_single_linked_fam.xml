@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="false"
+    android:background="#F2F2F2"
+    tools:context=".CareMenus.CareViewSingleLinkedFam">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/CareViewSingleFamHeader"
+        android:background="#9B6DC7"
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/CareViewSingleFamName"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginEnd="80dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="En turno:"
+            android:fontFamily="@font/comfortaa"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/RateLinkedFam"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_outline_star_rate"
+            app:layout_constraintTop_toBottomOf="@id/CareViewSingleFamName"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:backgroundTint="#8047B9"/>
+
+        <ImageButton
+            android:id="@+id/UnlinkLinkedFam"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_round_unlink"
+            app:layout_constraintTop_toBottomOf="@id/CareViewSingleFamName"
+            app:layout_constraintStart_toEndOf="@id/RateLinkedFam"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#8047B9"/>
+
+        <ImageButton
+            android:id="@+id/ChatLinkedFam"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_outline_chat"
+            app:layout_constraintTop_toBottomOf="@id/CareViewSingleFamName"
+            app:layout_constraintStart_toEndOf="@id/UnlinkLinkedFam"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#8047B9"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/SwitchActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/TV"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="15dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5"/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#F2F2F2"
+            app:layout_constraintTop_toBottomOf="@id/RateLinkedFam"
+            app:menu="@menu/care_linkedfam_nav_menu"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/care_host_layout"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="177dp"
+        app:defaultNavHost="true"
+        app:layout_constraintTop_toBottomOf="@id/CareViewSingleFamHeader"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:navGraph="@navigation/care_linkedfam_navigation"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

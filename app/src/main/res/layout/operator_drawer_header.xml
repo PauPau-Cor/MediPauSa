@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#64403E"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Operator_main_name"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:fontFamily="@font/comfortaa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Nombre"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/comfortaa"
+            android:textColor="@color/white"
+            android:text="Horas trabajadas: "
+            />
+        <TextView
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:id="@+id/Operator_hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/comfortaa"
+            android:textColor="@color/quantum_grey"
+            android:text=" "
+            />
+    </LinearLayout>
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="17dp"
+        android:text="En turno:"
+        android:fontFamily="@font/comfortaa"
+        android:textColor="@color/white"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/SwitchActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"/>
+</LinearLayout>

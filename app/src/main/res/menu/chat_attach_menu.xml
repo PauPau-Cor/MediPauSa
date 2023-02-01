@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/AttachImage"
+        android:icon="@drawable/ic_outline_image_24"
+        android:title="Adjuntar imagen"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/AttachFile"
+        android:icon="@drawable/ic_outline_file"
+        android:title="Adjuntar PDF"
+        app:showAsAction="always"/>
+
+</menu>

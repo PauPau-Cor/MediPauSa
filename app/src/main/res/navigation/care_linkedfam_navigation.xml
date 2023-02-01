@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/care_linkedfam_navigation"
+    app:startDestination="@id/care_linkedfam_pats">
+    <fragment
+        android:id="@+id/care_linkedfam_pats"
+        android:name="com.example.proyectoceti.CareMenus.CareViewSingleFamPatients"
+        android:label="Pacientes"
+        tools:layout="@layout/fragment_care_view_single_fam_patients" />
+    <fragment
+        android:id="@+id/care_linkedfam_me"
+        android:name="com.example.proyectoceti.CareMenus.CareViewSingleFamMe"
+        android:label="Mi perfil"
+        tools:layout="@layout/fragment_care_view_single_fam_me" />
+
+    <fragment
+        android:id="@+id/care_linkedfam_cares"
+        android:name="com.example.proyectoceti.CareMenus.CareViewSingleFamCares"
+        android:label="Cuidadores"
+        tools:layout="@layout/fragment_care_view_single_fam_cares" />
+
+</navigation>

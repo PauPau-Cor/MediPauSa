@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="false"
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    tools:context=".GeneralMenus.ViewMed">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/comfortaa"
+            android:text="Medicamento"
+            android:layout_marginTop="20dp"
+            android:textColor="#6890B8"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginBottom="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Datos"
+            android:textSize="14sp"
+            android:textColor="#595959"
+            android:fontFamily="@font/mandali"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#595959"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/mandali"
+                android:text="Nombre: "
+                android:textColor="#92AFCC"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/ViewMedName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/mandali"
+                android:textColor="#262626"
+                android:hint="Nombre"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/mandali"
+                android:text="Cantidad: "
+                android:textColor="#92AFCC"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/ViewMedQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/mandali"
+                android:hint="cantidad"
+                android:textColor="#262626"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/mandali"
+                android:text="Dosis: "
+                android:textSize="20sp"
+                android:textColor="#92AFCC"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/ViewMedDosage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/mandali"
+                android:hint="dosis"
+                android:textColor="#262626"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/mandali"
+                android:text="Fecha de expiracion: "
+                android:textSize="20sp"
+                android:textColor="#92AFCC"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/ViewMedExpir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/mandali"
+                android:hint="expiracion"
+                android:textColor="#262626"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/mandali"
+                android:text="Termino de tratamiento: "
+                android:textSize="20sp"
+                android:textColor="#92AFCC"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/ViewMedEndTreatment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/mandali"
+                android:hint="termino"
+                android:textColor="#262626"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Frecuencias"
+            android:textSize="14sp"
+            android:textColor="#595959"
+            android:fontFamily="@font/mandali"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#595959"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+        <LinearLayout
+            android:id="@+id/ViewMedFrequencies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:orientation="vertical"></LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ViewMedEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:text="Editar Datos"
+            android:backgroundTint="#779BBF"
+            android:textColor="#262626"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="30dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ViewMedAddMore"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:text="Añadir cantidad"
+            android:backgroundTint="#B9CADD"
+            android:textColor="#262626"
+            android:layout_marginBottom="30dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ViewMedDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:text="Borrar medicamento"
+            android:backgroundTint="#B9CADD"
+            android:textColor="#262626"
+            android:layout_marginBottom="30dp"/>
+    </LinearLayout>
+
+</ScrollView>

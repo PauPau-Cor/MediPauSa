@@ -1,0 +1,80 @@
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FamDrawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FamMenus.FamMenu">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/Fam_Toolbar"
+            android:backgroundTint="#4BB5CB"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/FamAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:navigationIcon="@drawable/ic_round_menu" >
+
+                <ImageButton
+                    android:id="@+id/SeeNotifsBT"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="?android:selectableItemBackground"
+                    android:layout_gravity="end"
+                    android:layout_margin="7dp"
+                    android:src="@drawable/ic_outline_notifications_24"
+                    android:contentDescription="Notifications" />
+            </com.google.android.material.appbar.MaterialToolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/fam_bottom_nav_menu" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fam_host_layout"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="50dp"
+            android:paddingTop="50dp"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toTopOf="@id/nav_view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Fam_Toolbar"
+            app:navGraph="@navigation/fam_navigation_bottom"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/FamDrawerNavView"
+        android:layout_gravity="start"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/fam_drawer_menu"
+        app:headerLayout="@layout/fam_drawer_header">
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

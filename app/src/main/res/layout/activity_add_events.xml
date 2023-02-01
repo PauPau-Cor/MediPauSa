@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:fillViewport="false"
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    tools:context=".GeneralMenus.AddEvents">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Evento"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/comfortaa"
+                    android:textColor="#468680"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10sp"
+                    android:fontFamily="@font/mandali"
+                    android:text="Fecha y hora del evento"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#83BFB9"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/ETAddEventDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:fontFamily="@font/mandali"
+                    android:inputType="datetime"
+                    android:textColor="#262626"
+                    android:layout_marginLeft="15dp"
+                    android:drawableLeft="@drawable/ic_baseline_calendar_today_24_2"
+                    android:drawablePadding="20dp"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/ETAddEventTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:fontFamily="@font/mandali"
+                    android:inputType="datetime"
+                    android:textColor="#262626"
+                    android:layout_marginLeft="15dp"
+                    android:drawableLeft="@drawable/ic_baseline_access_alarm_24"
+                    android:drawablePadding="20dp"
+                    android:textSize="18sp" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ETAddEventName"
+                    style="@style/outlinedTextInputLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Nombre del evento"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="#262626">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mandali"
+                        android:textColor="#262626">
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ETAddEventDes"
+                    style="@style/outlinedTextInputLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Descripción del Evento"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="#262626"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="@integer/max_desc_event_length"
+                    app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                    app:counterTextAppearance="@style/Counter">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mandali"
+                        android:textColor="#262626"
+                        >
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/BTAddEvent"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="#C8D5A7"
+                    android:textColor="#565656"
+                    android:text="Guardar" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
